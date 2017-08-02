@@ -13,5 +13,4 @@ function! s:isAnsible()
 endfunction
 
 :au BufNewFile,BufRead * if s:isAnsible() | set ft=ansible | en
-:au BufNewFile,BufRead *.j2 set ft=ansible_template
 :au BufNewFile,BufRead hosts set ft=ansible_hosts
